@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RARE QUEST — страшные переписки</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="#">RARE <span>QUEST</span></a><nav><a href="#quests">Квесты</a><a href="#about">О проекте</a><a href="https://t.me/rare_quest" target="_blank">Telegram ↗</a><button id="adminOpen">Войти для управления</button></nav></header>
+<main>
+<section class="hero"><div class="eye">◉</div><p class="eyebrow">INTERACTIVE HORROR EXPERIENCE</p><h1>Истории,<br>которые <i>не отпускают.</i></h1><p class="lead">Не читай со стороны. Стань частью переписки, где за каждым сообщением стоит настоящий человек.</p><a class="cta" href="#quests">Выбрать квест ↓</a><div class="hero-note">7 ИСТОРИЙ · ЖИВОЕ ВЕДЕНИЕ · РЕАЛЬНЫЕ ЛЮДИ</div></section>
+<section id="quests" class="section"><div class="section-head"><div><p class="eyebrow">ВЫБЕРИ СВОЮ ИСТОРИЮ</p><h2>Квесты</h2></div><span id="count"></span></div><div id="questGrid" class="grid"></div></section>
+<section id="about" class="about"><p class="eyebrow">КТО СТОИТ ЗА ИСТОРИЯМИ</p><h2>Две создательницы.<br><i>Одна тёмная сторона.</i></h2><p>RARE QUEST — интерактивные истории, которые ведут живые ведущие и актёры. Здесь нет автоматических ответов вместо людей.</p><a href="https://t.me/rare_quest" target="_blank">Наш Telegram ↗</a></section>
+</main><footer>RARE QUEST <span>ИСТОРИИ, КОТОРЫЕ ЛУЧШЕ НЕ ОТКРЫВАТЬ.</span></footer>
+<div id="admin" class="modal hidden"><div class="panel"><button class="close" id="adminClose">×</button><p class="eyebrow">ПАНЕЛЬ УПРАВЛЕНИЯ · ДЕМО</p><h2>Управление квестами</h2><p class="hint">Демо-режим: изменения сохраняются только в этом браузере. Для общей админки двух владелиц подключите Supabase и авторизацию.</p><form id="questForm"><input id="qtitle" placeholder="Название квеста" required><textarea id="qdesc" placeholder="Описание" required></textarea><input id="qgenre" placeholder="Жанр"><input id="qduration" placeholder="Продолжительность (например, 30–45 минут)"><select id="qstatus"><option>Доступен</option><option>Скоро</option><option>Скрыт</option></select><button class="cta" type="submit">Добавить квест</button></form><div id="adminList"></div></div></div>
+<script src="app.js"></script></body></html>
